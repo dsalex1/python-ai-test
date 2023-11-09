@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "installPythonDeps": "pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio===0.9.1 -f https://download.pytorch.org/whl/torch_stable.html && pip install transformers",
+        "downloadModel": "/usr/local/python/current/bin/python /workspaces/python-ai-test/main.py test"
+    },
+    "devDependencies": {
+        "axios": "^0.21",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14"
+    }
+}
